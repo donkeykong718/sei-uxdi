@@ -7,6 +7,77 @@
   font-family: Unbounded;
 }
 
+h1 {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.165px;
+}
+
+.card {
+  width: 393px;
+  height: 407px;
+  background: rgba(253, 243, 223, 0.96);
+  padding: 15px 0 0 0;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  width: 393px;
+  flex-wrap: wrap;
+  padding: 0px 25px 0px 24px;
+}
+
+.option {
+  display: inline;
+  margin-top: 25px;
+}
+
+.option-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  /* display: block; */
+}
+
+.option-name {
+  width: 109px;
+  height: 21px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+
+  text-align: center;
+  letter-spacing: -0.165px;
+
+  color: #000000;
+  /* display: block; */
+}
+
+.option-text {
+  width: 88px;
+  height: 12px;
+
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+
+  text-align: center;
+  letter-spacing: -0.165px;
+
+  color: #514546;
+  /* display: block; */
+}
+
 .horizontal-container {
   display: flex;
   position: relative;
