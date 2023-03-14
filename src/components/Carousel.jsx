@@ -5,6 +5,7 @@ import Image2 from '../assets/Hero Image Carousel/Group 2.png'
 import Image3 from '../assets/Hero Image Carousel/Group 3.png'
 import Image4 from '../assets/Hero Image Carousel/Group 4.png'
 import Image5 from '../assets/Hero Image Carousel/Group 5.png'
+import './Carousel.css'
 
 const images = [
   {
@@ -86,8 +87,6 @@ const Carousel = () => {
   const currentSlide = (n) => {
     setCurrentImageIndex(n - 1);
   };
-
-  const currentImage = images[currentImageIndex] || []
 
   return (
     <div className="carousel">
