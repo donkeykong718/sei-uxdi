@@ -16,6 +16,8 @@ import Gummies from './assets/Toppings/gummies3__06290.jpg'
 import Caramel from './assets/Toppings/istockphoto-1090251858-612x612.jpg'
 import Cherries from './assets/Toppings/maraschino_cherries-E127.jpg'
 
+import HeroMilk from './assets/milk.jpg'
+
 function App() {
 
   const flavors = {
@@ -95,6 +97,7 @@ function App() {
       <Card details={flavors} />
       <HorizontalScroll />
       <Card details={toppings} />
+      <img src={HeroMilk} alt="milk" style={{ height: "395px", width: "393px" }} />
     </div>
   );
 }
