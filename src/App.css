@@ -1,7 +1,250 @@
-.Rectangle-17 {
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.NavBarRectangle-17 {
+  position: relative;
   width: 393px;
   height: 112px;
   margin: 55px 0 0;
   padding: 3px 0 11px;
   background-color: #f9f9f9;
+  font-family: 'Unbounded', cursive;
+}
+.NavBarRectangle-16{
+/* position: absolute; */
+width: 393px;
+height: 60px;
+background: #F9F9F9;
+}
+.NavBarRectangle-15{
+  /* position: absolute; */
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  /* align-content: center; */
+  width: 393px;
+  height: 60px;
+  background: #F9F9F9;
+  }
+.Moo-5{
+/* position: absolute; */
+width: 44.21px;
+height: 40px;
+/* left: 46px;
+top: 72px; */
+}
+
+.Moo-ChaCha{
+display: flex;
+flex-direction: row;
+align-items: center;
+/* height: 110px;
+width: 248px; */
+/* left: -39px;
+top: 83px; */
+/* border-radius: nullpx; */
+
+
+font-family: 'Unbounded';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 19px;
+/* text-align: center; */
+letter-spacing: -0.165px;
+
+color: #000000;
+}
+
+.LightDarkButtonBackground {
+  position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+  width: 64px;
+  height: 30px;
+  flex-grow: 0;
+  margin: 3px 0px 7px 316px;
+  padding: 2px 2px 2px 7px;
+  border-radius: 36.5px;
+  background-image: linear-gradient(to right, #ffb800 -3%, #ff00b8 100%);
+}
+.LightDarkButtonKnob {
+/* position: absolute; */
+/* left: 56.25%;
+right: 3.12%;
+top: 6.67%;
+bottom: 6.67%; */
+
+height: 26px;
+width: 26px;
+left: 36px;
+top: 2px;
+border-radius: 100px;
+
+background: #FFFFFF;
+box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.01), 0px 3px 1px rgba(0, 0, 0, 0.03);
+border-radius: 100px;
+
+box-shadow: 0px 3px 1px 0px #00000008;
+
+box-shadow: 0px 1px 1px 0px #00000003;
+
+box-shadow: 0px 3px 8px 0px #0000001A;
+
+}
+.LightToggleIcon{
+
+/* position: absolute; */
+/* left: 62.5%;
+right: 9.38%;
+top: 23.33%;
+bottom: 20%; */
+
+font-family: 'Unbounded';
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+letter-spacing: -0.165px;
+
+background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+webkit-background-clip: text;
+webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+
+font-family: Unbounded;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: -0.16500000655651093px;
+text-align: left;
+
+height: 17px;
+width: 18px;
+left: 40px;
+top: 7px;
+border-radius: nullpx;
+
+}
+.DarkToggleIcon{
+height: 17px;
+width: 17px;
+left: 7px;
+top: 7px;
+border-radius: nullpx;
+
+font-family: Unbounded;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: -0.16500000655651093px;
+text-align: left;
+
+
+/* position: absolute; */
+/* left: 10.94%;
+right: 62.5%;
+top: 23.33%;
+bottom: 20%; */
+
+font-family: 'Unbounded';
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+letter-spacing: -0.165px;
+
+color: #FFC634;
+}
+
+.HamburgerLight{
+width: 30px;
+height: 22px;
+padding-top: 25;
+
+/* top: 50; */
+/* left: 9px; */
+}
+
+.UserIconLight {
+bottom: 0;
+left: 0;
+border-radius: 0px;
+position: fixed;
+  width: 25px;
+  height: 25px;
+  left: 350px;
+  top: 128px;
+}
+
+.LightToggleIcon{
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+
+height: 17px;
+width: 18px;
+left: 40px;
+top: 7px;
+border-radius: nullpx;
+
+/* left: 62.5%;
+right: 9.38%;
+top: 23.33%;
+bottom: 20%; */
+
+font-family: 'Unbounded';
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+letter-spacing: -0.165px;
+
+background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+
+.ShoppingCartLight{
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+
+height: 25px;
+width: 25px;
+left: 310px;
+top: 128px;
+border-radius: 0px;
+position: fixed;
+  width: 25px;
+  height: 25px;
+  left: 310px;
+  top: 128px;
+}
+
+.logo-text {
+  font-family: 'Unbounded';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 19px;
+text-align: center;
+letter-spacing: -0.165px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
 }
