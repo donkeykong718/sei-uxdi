@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all ease-out 300ms;
+}
+
+.NavBarRectangle-17 {
+  position: fixed;
+  align-items: center;
+  width: 393px;
+  height: 112px;
+  padding: 3px 0 11px;
+  background-color: #f9f9f9;
+  font-family: 'Unbounded', cursive;
+}
+
+.NavBarRectangle-16 {
+  display: flex;
+  flex-direction: row;
+  padding: 14px 15px 0px 9px;
+  align-items: center;
+  justify-content: space-between;
+  width: 393px;
+  height: 60px;
+  background-color: #F9F9F9;
+}
+
+.dark .NavBarRectangle-15,
+.dark .NavBarRectangle-16,
+.dark .NavBarRectangle-17 {
+  background-color: #222222;
+}
+
+.dark .logo-text {
+  color: #FFF;
+}
+
+.NavBarRectangle-15 {
+  display: flex;
+  flex-direction: row;
+  padding: 14px 15px 0px 9px;
+  align-items: center;
+  justify-content: space-between;
+  width: 393px;
+  height: 60px;
+  background: #F9F9F9;
+}
+
+.Moo-5 {
+  width: 44.21px;
+  height: 40px;
+}
+
+.Moo-ChaCha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* font-family: 'Unbounded'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.165px;
+  color: #000000;
+}
+
+.LightDarkButtonBackground {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 64px;
+  height: 30px;
+  flex-grow: 0;
+  padding: 2px 2px 2px 7px;
+  border-radius: 36.5px;
+  background-image: linear-gradient(to right, #ffb800 -3%, #ff00b8 100%);
+}
+
+.LightDarkButtonKnob {
+  height: 26px;
+  width: 26px;
+  border-radius: 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.01), 0px 3px 1px rgba(0, 0, 0, 0.03);
+  border-radius: 100px;
+  box-shadow: 0px 3px 1px 0px #00000008;
+  box-shadow: 0px 1px 1px 0px #00000003;
+  box-shadow: 0px 3px 8px 0px #0000001A;
+
+}
+
+.LightToggleIcon {
+  font-family: 'Unbounded';
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.165px;
+  background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+  webkit-background-clip: text;
+  webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+  font-family: Unbounded;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.16500000655651093px;
+  text-align: left;
+  height: 17px;
+  width: 18px;
+  left: 40px;
+  top: 7px;
+  border-radius: nullpx;
+}
+
+.DarkToggleIcon {
+  height: 17px;
+  width: 17px;
+  left: 7px;
+  top: 7px;
+  border-radius: nullpx;
+
+  font-family: Unbounded;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.16500000655651093px;
+  text-align: left;
+
+  font-family: 'Unbounded';
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  letter-spacing: -0.165px;
+
+  color: #FFC634;
+}
+
+.HamburgerLight {
+  width: 30px;
+  height: 22px;
+  padding-top: 25;
+}
+
+.dark .HamburgerLight {}
+
+.LightToggleIcon {
+  bottom: 0;
+  left: 0;
+  height: 17px;
+  width: 18px;
+  left: 40px;
+  top: 7px;
+  border-radius: nullpx;
+  font-family: 'Unbounded';
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.165px;
+  background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.logo-text {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.165px;
+}
+
+.icon {
+  display: flex;
+  width: 25px;
+  height: 25px;
+}
+
+.toggle-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.navigation {
+  position: sticky;
+  left: 0px;
+  width: 393px;
+  height: 60px;
+  padding: 17px 17px 13px 312px;
+  background-color: #f9f9f9;
+  transition: background-color ease-out 300ms;
+  z-index: 1;
+}
+
+.nav-dark {
+  background-color: #222;
+}
+
+.toggle-container {
+  position: relative;
+  width: 64px;
+  height: 30px;
+  flex-grow: 0;
+  padding: 2px 2px 2px 7px;
+  border-radius: 36.5px;
+  background: linear-gradient(to right, #ffb800 -3%, #ff00b8 100%);
+  transition: background ease-out 300ms;
+}
+
+.body .toggle-container {
+  background: linear-gradient(90deg, #20045B -3.13%, #7A3DFA 103.13%);
+}
+
+.knob {
+  position: absolute;
+  left: 36px;
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.03), 0 1px 1px 0 rgba(0, 0, 0, 0.01), 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: left ease-out 300ms;
+}
+
+.dark .knob {
+  left: 2px;
+}
+
+.moon {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 7.5px;
+  left: 7px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.165px;
+  z-index: 1;
+}
+
+.moon-path {
+  fill: #FFC634;
+  transition: fill ease-out 3000ms;
+}
+
+.dark .moon-path {
+  fill: url("#dark-gradient")
+}
+
+.sun {
+  position: absolute;
+  width: 18px;
+  height: 17px;
+  top: 7px;
+  right: 4.75px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.165px;
+  background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  z-index: 1;
+}
+
+.swirl-container {
+  width: 29px;
+  height: 30px;
+  position: absolute;
+  left: 197px;
+}
+
+.swirl-path {
+  fill: #D79881;
+  transition: fill ease-out 300ms;
+}
+
+.dark .swirl-path {
+  fill: #fff;
+}
+
+.sun-path {
+  fill: url("#light-gradient");
+  transition: fill ease-out 300ms;
+}
+
+.dark .sun-path {
+  fill: #AD87FF;
+}
+
+.title {
+  position: absolute;
+  width: 252px;
+  height: 74px;
+  top: -23px;
+  left: 15px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 43px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.165px;
+  color: #D79881;
+  transition: color ease-out 300ms;
+}
+
+.dark .title {
+  color: #fff;
+}
+
+.footer-container {
+  position: relative;
+  width: 393px;
+  height: 400px;
+  background-color: #9A6767;
+  transition: background-color ease-out 300ms;
+}
+
+.icon-container {
+  display: flex;
+  gap: 18px;
+}
+
+.dark .icon {
+  color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Unbounded;
+}
+
+.buffer {
+  height: 112px;
+}
+
+h1 {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.165px;
+  margin-bottom: 25px;
+}
+
+.card {
+  width: 393px;
+  height: 407px;
+  background: rgba(253, 243, 223, 0.96);
+  padding: 17px 0px 0px 0px;
+}
+
+.dark .card {
+  background: #222222;
+  color: #FFFFFF;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 393px;
+  flex-wrap: wrap;
+  padding: 0px 25px 0px 18px;
+  row-gap: 30px;
+}
+
+.option {
+  display: inline;
+  /* margin-top: 25px; */
+  text-align: center;
+}
+
+.option-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  /* display: block; */
+}
+
+.option-name {
+  width: 109px;
+  height: 21px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+
+  /* text-align: center; */
+  letter-spacing: -0.165px;
+
+  color: #000000;
+  /* display: block; */
+  margin-top: 5px;
+}
+
+.dark .option-name {
+  color: #FFFFFF;
+}
+
+.option-text {
+  /* width: 88px; */
+  height: 12px;
+
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+
+  /* text-align: center; */
+  letter-spacing: -0.165px;
+
+  color: #514546;
+  /* display: block; */
+  margin-top: 4px;
+}
+
+.dark .option-text {
+  color: #FFFFFF;
+}
+
+.horizontal-container {
+  display: flex;
+  position: relative;
+  width: 393px;
+  height: 187px;
+  overflow-x: scroll;
+  background: #FFFFFF;
+
+}
+
+.dark .horizontal-container {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.horizontal-container::-webkit-scrollbar {
+  display: none;
+}
+
+.image-container {
+  display: flex;
+  height: 125px;
+  min-width: 125px;
+  border-radius: 25px;
+  justify-content: center;
+  /* align-items: start; */
+}
+
+img.cone {
+  padding: 15px;
+  height: 100%;
+}
+
+.cone-container {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.165px;
+  overflow: wrap;
+}
+
+.caption {
+  height: 49px;
+}
+
+.footer {
+  margin-top: -4px;
+  width: 393px;
+  height: 501px;
+  background-color: #EBBEC1;
+  padding: 22px 0px 0px 23px;
+}
+
+.dark .footer {
+  background-color: #222222;
+  color: #FFFFFF;
+}
+
+.Logo-Text-Style {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.165px;
+  color: #000000;
+}
+
+.dark .Logo-Text-Style {
+  color: #FFFFFF;
+}
+
+.Moo-ChaCha {
+  display: flex;
+  align-items: center;
+}
+
+a:link {
+  margin: 16px 0px 0px 1px;
+  text-decoration: none;
+  color: #514556;
+  display: block;
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+a:visited {
+  color: #514556;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.dark a:link {
+  color: white;
+}
+
+.dark a:visited {
+  color: white;
+}
+
+.social-logos {
+  margin: 50.96px 33px 1px 0px;
+  height: 37.7px;
+  width: 40px;
+}
