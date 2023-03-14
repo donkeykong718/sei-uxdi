@@ -1,5 +1,6 @@
 import HorizontalScroll from './components/HorizontalScroll'
 import Card from './components/Card'
+import Footer from './components/Footer'
 import './App.css';
 
 import Seasonal from './assets/Flavors/Black-Cherry-Chip_TUBSHOT-1.jpeg'
@@ -98,6 +99,7 @@ function App() {
       <HorizontalScroll />
       <Card details={toppings} />
       <img src={HeroMilk} alt="milk" style={{ height: "395px", width: "393px" }} />
+      <Footer />
     </div>
   );
 }

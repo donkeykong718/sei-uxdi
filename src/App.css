@@ -100,10 +100,21 @@ h1 {
   color: #FFFFFF;
 }
 
-.horizontal-container:-webkit-scrollbar {
+.horizontal-container::-webkit-scrollbar {
   display: none;
 }
 
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
 
 .image-container {
   display: flex;
@@ -131,4 +142,52 @@ img.cone {
 
 .caption {
   height: 49px;
+}
+
+.footer {
+  margin-top: -4px;
+  width: 393px;
+  height: 501px;
+  background-color: #EBBEC1;
+  padding: 22px 0px 0px 23px;
+}
+
+.Logo-Text-Style {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.165px;
+  color: #000000;
+}
+
+.Moo-ChaCha {
+  display: flex;
+  align-items: center;
+}
+
+a:link {
+  margin: 16px 0px 0px 1px;
+  text-decoration: none;
+  color: #514556;
+  display: block;
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+a:visited {
+  color: #514556;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-logos {
+  margin: 50.96px 33px 1px 0px;
+  height: 37.7px;
+  width: 40px;
 }
