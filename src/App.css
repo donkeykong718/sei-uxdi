@@ -91,11 +91,22 @@ h1 {
   width: 393px;
   height: 187px;
   overflow-x: scroll;
+  background: #FFFFFF;
+
 }
+
+.horizontal-container.dark-mode {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.horizontal-container:-webkit-scrollbar {
+  display: none;
+}
+
 
 .image-container {
   display: flex;
-  background: #FFFFFF;
   height: 125px;
   min-width: 125px;
   border-radius: 25px;
@@ -104,6 +115,7 @@ h1 {
 }
 
 img.cone {
+  padding: 15px;
   height: 100%;
 }
 
