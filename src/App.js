@@ -3,6 +3,7 @@ import HorizontalScroll from './components/HorizontalScroll'
 import Card from './components/Card'
 import Footer from './components/Footer'
 import './App.css';
+import Carousel from './components/Carousel'
 
 import React, { useState, useEffect } from "react";
 
@@ -253,7 +254,7 @@ function App() {
             {/* <img src={HamburgerIcon} alt="Hamburger Icon" width="30" height="22" /> */}
 
           </div>
-
+    
 
           <div className="icon-container">
             <img src={state === 'light' ? UserIconLight : UserIconDark} alt="User Icon" className="icon" />
@@ -263,6 +264,7 @@ function App() {
       </div>
 
       <div className="buffer"></div>
+      <Carousel/>
       <Card details={flavors} />
       <HorizontalScroll />
       <Card details={toppings} />
