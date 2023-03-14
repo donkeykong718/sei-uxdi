@@ -6,7 +6,7 @@ import GlutenFreeCone from '../assets/Cones/gf-cone.png'
 
 export default function HorizontalScroll() {
   return (
-    <div className="horizontal-container dark-mode">
+    <div className="horizontal-container">
 
       <div className='cone-container'>
         <div className="image-container">
