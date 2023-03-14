@@ -19,6 +19,7 @@
   padding: 3px 0 11px;
   background-color: #f9f9f9;
   font-family: 'Unbounded', cursive;
+  z-index: 999;
 }
 
 .NavBarRectangle-16 {
@@ -79,7 +80,11 @@
   flex-grow: 0;
   padding: 2px 2px 2px 7px;
   border-radius: 36.5px;
-  background-image: linear-gradient(to right, #ffb800 -3%, #ff00b8 100%);
+  background-image: linear-gradient(to right, #ffb800 -3%, #ff00b8 100%)
+}
+
+.dark .LightDarkButtonBackground {
+  background-image: linear-gradient(90deg, #20045B -3.13%, #7A3DFA 103.13%);
 }
 
 .LightDarkButtonKnob {
@@ -105,7 +110,7 @@
   webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+  /* background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%); */
   font-family: Unbounded;
   font-size: 14px;
   line-height: 16px;
@@ -116,6 +121,10 @@
   left: 40px;
   top: 7px;
   border-radius: nullpx;
+}
+
+.dark .LightToggleIcon {
+  background-image: linear-gradient(90deg, #20045B -3.13%, #7A3DFA 103.13%);
 }
 
 .DarkToggleIcon {
@@ -140,14 +149,17 @@
   color: #FFC634;
 }
 
+.dark .DarkToggleIcon {
+  color: #7A3DFA;
+}
+
 .HamburgerLight {
   width: 30px;
   height: 22px;
   padding-top: 25;
 }
 
-
-.LightToggleIcon {
+/* .LightToggleIcon {
   bottom: 0;
   left: 0;
   height: 17px;
@@ -164,7 +176,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-}
+} */
 
 .logo-text {
   font-family: 'Unbounded';
@@ -213,7 +225,7 @@
   transition: background ease-out 300ms;
 }
 
-.body .toggle-container {
+.dark .toggle-container {
   background: linear-gradient(90deg, #20045B -3.13%, #7A3DFA 103.13%);
 }
 
@@ -249,12 +261,14 @@
 
 .moon-path {
   fill: #FFC634;
-  transition: fill ease-out 3000ms;
+  /* transition: fill ease-out 3000ms; */
 }
 
 .dark .moon-path {
-  fill: url("#dark-gradient")
+  fill: #7A3DFA
+    /* fill: url("#dark-gradient") */
 }
+
 
 .sun {
   position: absolute;
@@ -275,21 +289,25 @@
   z-index: 1;
 }
 
-.swirl-container {
+.dark .sun {
+  background: linear-gradient(90deg, #20045B -3.13%, #7A3DFA 103.13%);
+}
+
+/* .swirl-container {
   width: 29px;
   height: 30px;
   position: absolute;
   left: 197px;
-}
+} */
 
-.swirl-path {
+/* .swirl-path {
   fill: #D79881;
   transition: fill ease-out 300ms;
 }
 
 .dark .swirl-path {
   fill: #fff;
-}
+} */
 
 .sun-path {
   fill: url("#light-gradient");
@@ -322,13 +340,13 @@
   color: #fff;
 }
 
-.footer-container {
+/* .footer-container {
   position: relative;
   width: 393px;
   height: 400px;
   background-color: #9A6767;
   transition: background-color ease-out 300ms;
-}
+} */
 
 .icon-container {
   display: flex;
@@ -435,7 +453,6 @@ h1 {
   height: 187px;
   overflow-x: scroll;
   background: #FFFFFF;
-
 }
 
 .dark .horizontal-container {

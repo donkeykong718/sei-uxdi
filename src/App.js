@@ -204,12 +204,12 @@ function App() {
 
           <div className="icon-container">
             <img
-              src={state === "light" ? UserIconLight : UserIconDark}
+              src={state === "light" ? ShoppingCart : ShoppingCartDark}
               alt="User Icon"
               className="icon"
             />
             <img
-              src={state === "light" ? ShoppingCart : ShoppingCartDark}
+              src={state === "light" ? UserIconLight : UserIconDark}
               alt="User Icon"
               className="icon"
             />
@@ -220,6 +220,7 @@ function App() {
       <div className="buffer"></div>
       <Carousel />
       <Card details={flavors} />
+      {/* <p className="option-name">Cones</p> */}
       <HorizontalScroll />
       <Card details={toppings} />
       <img
