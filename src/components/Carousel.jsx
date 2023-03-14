@@ -65,8 +65,6 @@ const images = [
     ],
   }
 ]
-//   }
-// ];
 
 
 
@@ -97,18 +95,7 @@ const Carousel = () => {
           alt="carousel"
           onClick={handleImageClick}
         />
-        {/* <div className="carousel__text" style={images[currentImageIndex].style}>
-          {images[currentImageIndex].text}
-        </div> */}
-        {/* {currentImage.elements.map(el => {
-          return (
-            <>
-              {el.text[1] && <span style={el.style} className="txt">{el.text[1]}</span>}
-              <span style={el.style} className="txt">{el.text[0]}</span>
-            </>
-          )
 
-        })} */}
         <div className='select'>
           <span className="dot" onClick={() => currentSlide(1)}></span>
           <span className="dot" onClick={() => currentSlide(2)}></span>
