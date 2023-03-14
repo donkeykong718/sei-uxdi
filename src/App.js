@@ -99,7 +99,7 @@ function App() {
       <HorizontalScroll />
       <Card details={toppings} />
       <img src={HeroMilk} alt="milk" style={{ height: "395px", width: "393px" }} />
-      <Footer />
+      <Footer mode='dark' />
     </div>
   );
 }

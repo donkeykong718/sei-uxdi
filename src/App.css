@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -152,6 +153,11 @@ img.cone {
   padding: 22px 0px 0px 23px;
 }
 
+.footer.dark-mode {
+  background-color: #222222;
+  color: #FFFFFF;
+}
+
 .Logo-Text-Style {
   font-style: normal;
   font-weight: 700;
@@ -159,6 +165,10 @@ img.cone {
   line-height: 19px;
   letter-spacing: -0.165px;
   color: #000000;
+}
+
+.Logo-Text-Style.dark-mode {
+  color: #FFFFFF;
 }
 
 .Moo-ChaCha {
@@ -184,6 +194,14 @@ a:visited {
 
 a:hover {
   text-decoration: underline;
+}
+
+a:link.dark-mode {
+  color: white;
+}
+
+a:visited.dark-mode {
+  color: white;
 }
 
 .social-logos {
