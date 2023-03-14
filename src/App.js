@@ -1,3 +1,6 @@
+
+import React from 'react';
+import NavBar from './components/NavBar.jsx';
 import HorizontalScroll from './components/HorizontalScroll'
 import Card from './components/Card'
 import Footer from './components/Footer'
@@ -95,6 +98,7 @@ function App() {
   }
   return (
     <div className="App">
+       <NavBar/>
       <Card details={flavors} />
       <HorizontalScroll />
       <Card details={toppings} />
