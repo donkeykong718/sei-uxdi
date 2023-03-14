@@ -8,28 +8,29 @@
 }
 
 .NavBarRectangle-17 {
-  position: relative;
+  position: fixed;
   align-items: center;
   width: 393px;
   height: 112px;
-  margin: 55px 0 0;
   padding: 3px 0 11px;
   background-color: #f9f9f9;
   font-family: 'Unbounded', cursive;
 }
 
-.NavBarRectangle-16{
-display: flex;
-flex-direction: row;
-padding: 14px 15px 0px 9px;
-align-items: center;
-justify-content: space-between;
-width: 393px;
-height: 60px;
-background-color: #F9F9F9;
+.NavBarRectangle-16 {
+  display: flex;
+  flex-direction: row;
+  padding: 14px 15px 0px 9px;
+  align-items: center;
+  justify-content: space-between;
+  width: 393px;
+  height: 60px;
+  background-color: #F9F9F9;
 }
 
-.dark .NavBarRectangle-15, .dark .NavBarRectangle-16, .dark .NavBarRectangle-17 {
+.dark .NavBarRectangle-15,
+.dark .NavBarRectangle-16,
+.dark .NavBarRectangle-17 {
   background-color: #222222;
 }
 
@@ -37,39 +38,39 @@ background-color: #F9F9F9;
   color: #FFF;
 }
 
-.NavBarRectangle-15{
-display: flex;
-flex-direction: row;
-padding: 14px 15px 0px 9px;
-align-items: center;
-justify-content: space-between;
-width: 393px;
-height: 60px;
-background: #F9F9F9;
+.NavBarRectangle-15 {
+  display: flex;
+  flex-direction: row;
+  padding: 14px 15px 0px 9px;
+  align-items: center;
+  justify-content: space-between;
+  width: 393px;
+  height: 60px;
+  background: #F9F9F9;
 }
 
-.Moo-5{
-width: 44.21px;
-height: 40px;
+.Moo-5 {
+  width: 44.21px;
+  height: 40px;
 }
 
-.Moo-ChaCha{
-display: flex;
-flex-direction: row;
-align-items: center;
-/* font-family: 'Unbounded'; */
-font-style: normal;
-font-weight: 700;
-font-size: 15px;
-line-height: 19px;
-letter-spacing: -0.165px;
-color: #000000;
+.Moo-ChaCha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* font-family: 'Unbounded'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.165px;
+  color: #000000;
 }
 
 .LightDarkButtonBackground {
   display: flex;
   flex-direction: row;
-justify-content: space-between;
+  justify-content: space-between;
   width: 64px;
   height: 30px;
   flex-grow: 0;
@@ -77,99 +78,101 @@ justify-content: space-between;
   border-radius: 36.5px;
   background-image: linear-gradient(to right, #ffb800 -3%, #ff00b8 100%);
 }
+
 .LightDarkButtonKnob {
-height: 26px;
-width: 26px;
-border-radius: 100px;
-background: #FFFFFF;
-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.01), 0px 3px 1px rgba(0, 0, 0, 0.03);
-border-radius: 100px;
-box-shadow: 0px 3px 1px 0px #00000008;
-box-shadow: 0px 1px 1px 0px #00000003;
-box-shadow: 0px 3px 8px 0px #0000001A;
-
-}
-.LightToggleIcon{
-font-family: 'Unbounded';
-font-size: 14px;
-line-height: 16px;
-letter-spacing: -0.165px;
-background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
-webkit-background-clip: text;
-webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
-font-family: Unbounded;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: -0.16500000655651093px;
-text-align: left;
-height: 17px;
-width: 18px;
-left: 40px;
-top: 7px;
-border-radius: nullpx;
-}
-
-.DarkToggleIcon{
-height: 17px;
-width: 17px;
-left: 7px;
-top: 7px;
-border-radius: nullpx;
-
-font-family: Unbounded;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: -0.16500000655651093px;
-text-align: left;
-
-font-family: 'Unbounded';
-font-size: 14px;
-line-height: 16px;
-/* identical to box height */
-
-letter-spacing: -0.165px;
-
-color: #FFC634;
-}
-
-.HamburgerLight{
-width: 30px;
-height: 22px;
-padding-top: 25;
-}
-.dark .HamburgerLight{
+  height: 26px;
+  width: 26px;
+  border-radius: 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.01), 0px 3px 1px rgba(0, 0, 0, 0.03);
+  border-radius: 100px;
+  box-shadow: 0px 3px 1px 0px #00000008;
+  box-shadow: 0px 1px 1px 0px #00000003;
+  box-shadow: 0px 3px 8px 0px #0000001A;
 
 }
 
-.LightToggleIcon{
-bottom: 0;
-left: 0;
-height: 17px;
-width: 18px;
-left: 40px;
-top: 7px;
-border-radius: nullpx;
-font-family: 'Unbounded';
-font-size: 14px;
-line-height: 16px;
-letter-spacing: -0.165px;
-background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+.LightToggleIcon {
+  font-family: 'Unbounded';
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.165px;
+  background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+  webkit-background-clip: text;
+  webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+  font-family: Unbounded;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.16500000655651093px;
+  text-align: left;
+  height: 17px;
+  width: 18px;
+  left: 40px;
+  top: 7px;
+  border-radius: nullpx;
 }
+
+.DarkToggleIcon {
+  height: 17px;
+  width: 17px;
+  left: 7px;
+  top: 7px;
+  border-radius: nullpx;
+
+  font-family: Unbounded;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.16500000655651093px;
+  text-align: left;
+
+  font-family: 'Unbounded';
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  letter-spacing: -0.165px;
+
+  color: #FFC634;
+}
+
+.HamburgerLight {
+  width: 30px;
+  height: 22px;
+  padding-top: 25;
+}
+
+.dark .HamburgerLight {}
+
+.LightToggleIcon {
+  bottom: 0;
+  left: 0;
+  height: 17px;
+  width: 18px;
+  left: 40px;
+  top: 7px;
+  border-radius: nullpx;
+  font-family: 'Unbounded';
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.165px;
+  background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .logo-text {
-font-family: 'Unbounded';
-font-style: normal;
-font-weight: 700;
-font-size: 15px;
-line-height: 19px;
-text-align: center;
-letter-spacing: -0.165px;
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.165px;
 }
 
 .icon {
@@ -333,6 +336,7 @@ letter-spacing: -0.165px;
 
 .dark .icon {
   color: #fff;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
@@ -342,6 +346,10 @@ letter-spacing: -0.165px;
   margin: 0;
   padding: 0;
   font-family: Unbounded;
+}
+
+.buffer {
+  height: 112px;
 }
 
 h1 {
@@ -360,6 +368,11 @@ h1 {
   height: 407px;
   background: rgba(253, 243, 223, 0.96);
   padding: 17px 0px 0px 0px;
+}
+
+.dark .card {
+  background: #222222;
+  color: #FFFFFF;
 }
 
 .options-container {
@@ -402,6 +415,10 @@ h1 {
   margin-top: 5px;
 }
 
+.dark .option-name {
+  color: #FFFFFF;
+}
+
 .option-text {
   /* width: 88px; */
   height: 12px;
@@ -420,6 +437,10 @@ h1 {
   margin-top: 4px;
 }
 
+.dark .option-text {
+  color: #FFFFFF;
+}
+
 .horizontal-container {
   display: flex;
   position: relative;
@@ -430,25 +451,13 @@ h1 {
 
 }
 
-.horizontal-container.dark-mode {
+.dark .horizontal-container {
   background: #000000;
   color: #FFFFFF;
 }
 
 .horizontal-container::-webkit-scrollbar {
   display: none;
-}
-
-.example::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
 }
 
 .image-container {
@@ -487,7 +496,7 @@ img.cone {
   padding: 22px 0px 0px 23px;
 }
 
-.footer.dark-mode {
+.dark .footer {
   background-color: #222222;
   color: #FFFFFF;
 }
@@ -501,7 +510,7 @@ img.cone {
   color: #000000;
 }
 
-.Logo-Text-Style.dark-mode {
+.dark .Logo-Text-Style {
   color: #FFFFFF;
 }
 
@@ -530,11 +539,11 @@ a:hover {
   text-decoration: underline;
 }
 
-a:link.dark-mode {
+.dark a:link {
   color: white;
 }
 
-a:visited.dark-mode {
+.dark a:visited {
   color: white;
 }
 
