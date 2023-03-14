@@ -3,6 +3,13 @@ import Card from './components/Card'
 import Footer from './components/Footer'
 import './App.css';
 
+// import Images from './assets/image-imports'
+import HeroMilk from './assets/milk.jpg'
+
+// const { Flavors, Toppings, Icons } = Images;
+// const { Seasonal, Milk, New, Popular, Sorbet, Vegan } = Images.Flavors;
+// const { Sprinkles, Oreos, Chocolate, Gummies, Caramel, Cherries } = Images.Toppings;
+
 import Seasonal from './assets/Flavors/Black-Cherry-Chip_TUBSHOT-1.jpeg'
 import Milk from './assets/Flavors/EarlGreyTea_TubShot-3-1.jpg'
 import New from './assets/Flavors/Peanut-Butter-Brownie-Chip-Tubshot-1-1.jpg'
@@ -17,7 +24,6 @@ import Gummies from './assets/Toppings/gummies3__06290.jpg'
 import Caramel from './assets/Toppings/istockphoto-1090251858-612x612.jpg'
 import Cherries from './assets/Toppings/maraschino_cherries-E127.jpg'
 
-import HeroMilk from './assets/milk.jpg'
 
 function App() {
 
@@ -99,7 +105,7 @@ function App() {
       <HorizontalScroll />
       <Card details={toppings} />
       <img src={HeroMilk} alt="milk" style={{ height: "395px", width: "393px" }} />
-      <Footer mode='dark' />
+      <Footer mode='light' />
     </div>
   );
 }
