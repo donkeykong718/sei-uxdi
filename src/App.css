@@ -333,4 +333,213 @@ letter-spacing: -0.165px;
 
 .dark .icon {
   color: #fff;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Unbounded;
+}
+
+h1 {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.165px;
+  margin-bottom: 25px;
+}
+
+.card {
+  width: 393px;
+  height: 407px;
+  background: rgba(253, 243, 223, 0.96);
+  padding: 17px 0px 0px 0px;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 393px;
+  flex-wrap: wrap;
+  padding: 0px 25px 0px 18px;
+  row-gap: 30px;
+}
+
+.option {
+  display: inline;
+  /* margin-top: 25px; */
+  text-align: center;
+}
+
+.option-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  /* display: block; */
+}
+
+.option-name {
+  width: 109px;
+  height: 21px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+
+  /* text-align: center; */
+  letter-spacing: -0.165px;
+
+  color: #000000;
+  /* display: block; */
+  margin-top: 5px;
+}
+
+.option-text {
+  /* width: 88px; */
+  height: 12px;
+
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+
+  /* text-align: center; */
+  letter-spacing: -0.165px;
+
+  color: #514546;
+  /* display: block; */
+  margin-top: 4px;
+}
+
+.horizontal-container {
+  display: flex;
+  position: relative;
+  width: 393px;
+  height: 187px;
+  overflow-x: scroll;
+  background: #FFFFFF;
+
+}
+
+.horizontal-container.dark-mode {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.horizontal-container::-webkit-scrollbar {
+  display: none;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.image-container {
+  display: flex;
+  height: 125px;
+  min-width: 125px;
+  border-radius: 25px;
+  justify-content: center;
+  /* align-items: start; */
+}
+
+img.cone {
+  padding: 15px;
+  height: 100%;
+}
+
+.cone-container {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.165px;
+  overflow: wrap;
+}
+
+.caption {
+  height: 49px;
+}
+
+.footer {
+  margin-top: -4px;
+  width: 393px;
+  height: 501px;
+  background-color: #EBBEC1;
+  padding: 22px 0px 0px 23px;
+}
+
+.footer.dark-mode {
+  background-color: #222222;
+  color: #FFFFFF;
+}
+
+.Logo-Text-Style {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.165px;
+  color: #000000;
+}
+
+.Logo-Text-Style.dark-mode {
+  color: #FFFFFF;
+}
+
+.Moo-ChaCha {
+  display: flex;
+  align-items: center;
+}
+
+a:link {
+  margin: 16px 0px 0px 1px;
+  text-decoration: none;
+  color: #514556;
+  display: block;
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+a:visited {
+  color: #514556;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:link.dark-mode {
+  color: white;
+}
+
+a:visited.dark-mode {
+  color: white;
+}
+
+.social-logos {
+  margin: 50.96px 33px 1px 0px;
+  height: 37.7px;
+  width: 40px;
 }
