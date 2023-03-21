@@ -1,5 +1,3 @@
-// import { useState } from 'react';
-
 import Moo from '../assets/Icons/Moo-5 1.svg';
 import facebookLight from '../assets/Icons/facebook-logo-light.svg';
 import instaLight from '../assets/Icons/insta-logo-light.svg';
@@ -9,10 +7,6 @@ import facebookDark from '../assets/Icons/facebook-logo-dark.svg'
 import instaDark from '../assets/Icons/insta-logo-dark.svg';
 import tiktokDark from '../assets/Icons/tiktok-logo-dark.svg';
 import twitterDark from '../assets/Icons/twitter-logo-dark.svg';
-
-// import Images from '../assets/image-imports'
-
-// const { Moo, facebookLight, instaLight, tiktokLight, twitterLight, facebookDark, instaDark, tiktokDark, twitterDark } = Images.Icons;
 
 export default function Footer({ mode }) {
 

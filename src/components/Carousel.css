@@ -1,13 +1,12 @@
 .carousel__image {
   z-index: -1;
   display: grid;
-  /* position: absolute; */
   width: 393px;
   height: 250px;
   left: 0px;
   top: 0px;
   transition: all 3s ease-in-out;
-  
+
 }
 
 .dot {
@@ -28,7 +27,7 @@
 }
 
 span {
-  text-align:center;
+  text-align: center;
 }
 .dot:hover {
   background-color: #ffffff; opacity: 0.8;
@@ -60,7 +59,6 @@ span {
 }
 
 .select {
-  /* position: absolute; */
   margin: 0 auto;
   margin-top: -32px;
   z-index: 1000;
@@ -68,14 +66,14 @@ span {
 
 .txt {
   font-family: 'Unbounded';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 27px;
-text-align: center;
-letter-spacing: -0.165px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.165px;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 
 }
 
