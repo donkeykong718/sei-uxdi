@@ -70,20 +70,29 @@ const images = [
 
 const Carousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const handleImageClick = () => {
+    setCurrentImageIndex((currentImageIndex + 1) % images.length);
+  };
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImageIndex((currentImageIndex + 1) % images.length);
     }, 3000);
     return () => clearInterval(intervalId);
-  }, [currentImageIndex,]);
+  }, [currentImageIndex]);
 
-  const handleImageClick = () => {
-    setCurrentImageIndex((currentImageIndex + 1) % images.length);
-  };
+  useEffect(() => {
+    const activeIntervalId = setInterval(() => {
+      setActiveSlide((activeSlide + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(activeIntervalId);
+  }, [activeSlide]);
 
-  const currentSlide = (n) => {
-    setCurrentImageIndex(n - 1);
+  const currentSlide = (index) => {
+    setCurrentImageIndex(index - 1);
+    setActiveSlide(index - 1);
   };
 
   return (
@@ -95,13 +104,14 @@ const Carousel = () => {
           alt="carousel"
           onClick={handleImageClick}
         />
-
         <div className='select'>
-          <span className="dot" onClick={() => currentSlide(1)}></span>
-          <span className="dot" onClick={() => currentSlide(2)}></span>
-          <span className="dot" onClick={() => currentSlide(3)}></span>
-          <span className="dot" onClick={() => currentSlide(4)}></span>
-          <span className="dot" onClick={() => currentSlide(5)}></span>
+          {images.map((image, index) => (
+            <span
+              key={index}
+              className={`dot ${index === activeSlide ? 'active' : ''}`}
+              onClick={() => currentSlide(index + 1)}
+            />
+          ))}
         </div>
       </div>
     </div>
