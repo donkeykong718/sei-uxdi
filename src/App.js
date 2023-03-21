@@ -264,7 +264,7 @@ function App() {
       </div>
 
       <div className="buffer"></div>
-      <Carousel/>
+      <Carousel />
       <Card details={flavors} />
       <HorizontalScroll />
       <Card details={toppings} />
