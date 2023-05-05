@@ -7,7 +7,7 @@ import GlutenFreeCone from '../assets/Cones/gf-cone.png'
 export default function HorizontalScroll() {
   return (
     <div>
-      <h1 style={{ marginTop: "17px", marginBottom: "7px" }}>Cones</h1>
+      <h1 style={{ marginTop: "17px", marginBottom: "7px", width: '393px' }}>Cones</h1>
       <div className="horizontal-container">
         <div style={{ marginLeft: "10px" }} className='cone-container'>
           <div className="image-container">
