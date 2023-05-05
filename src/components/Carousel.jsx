@@ -66,8 +66,6 @@ const images = [
   }
 ]
 
-
-
 const Carousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -75,8 +73,21 @@ const Carousel = () => {
     const intervalId = setInterval(() => {
       setCurrentImageIndex((currentImageIndex + 1) % images.length);
     }, 3000);
+
+    const dot0 = document.getElementById('0');
+    const dot1 = document.getElementById('1');
+    const dot2 = document.getElementById('2');
+    const dot3 = document.getElementById('3');
+    const dot4 = document.getElementById('4');
+    const allDots = [dot0, dot1, dot2, dot3, dot4];
+
+    allDots.forEach(element => {
+      element.classList.remove('active')
+    });
+    const activeDot = document.getElementById(currentImageIndex);
+    activeDot.classList.add('active')
     return () => clearInterval(intervalId);
-  }, [currentImageIndex,]);
+  }, [currentImageIndex]);
 
   const handleImageClick = () => {
     setCurrentImageIndex((currentImageIndex + 1) % images.length);
@@ -97,11 +108,11 @@ const Carousel = () => {
         />
 
         <div className='select'>
-          <span className="dot" onClick={() => currentSlide(1)}></span>
-          <span className="dot" onClick={() => currentSlide(2)}></span>
-          <span className="dot" onClick={() => currentSlide(3)}></span>
-          <span className="dot" onClick={() => currentSlide(4)}></span>
-          <span className="dot" onClick={() => currentSlide(5)}></span>
+          <span id='0' className="dot" onClick={() => currentSlide(1)}></span>
+          <span id='1' className="dot" onClick={() => currentSlide(2)}></span>
+          <span id='2' className="dot" onClick={() => currentSlide(3)}></span>
+          <span id='3' className="dot" onClick={() => currentSlide(4)}></span>
+          <span id='4' className="dot" onClick={() => currentSlide(5)}></span>
         </div>
       </div>
     </div>

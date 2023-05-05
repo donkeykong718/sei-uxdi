@@ -289,9 +289,9 @@
   z-index: 1;
 }
 
-.dark .sun {
+/* .dark .sun {
   background: linear-gradient(90deg, #20045B -3.13%, #7A3DFA 103.13%);
-}
+} */
 
 /* .swirl-container {
   width: 29px;
@@ -374,6 +374,10 @@ h1 {
   text-align: center;
   letter-spacing: -0.165px;
   margin-bottom: 25px;
+}
+
+.dark h1 {
+  color: white;
 }
 
 .card {
