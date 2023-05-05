@@ -68,6 +68,11 @@ const images = [
 
 const Carousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const handleImageClick = () => {
+    setCurrentImageIndex((currentImageIndex + 1) % images.length);
+  };
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -88,35 +93,39 @@ const Carousel = () => {
     activeDot.classList.add('active')
     return () => clearInterval(intervalId);
   }, [currentImageIndex]);
+}, [currentImageIndex]);
 
-  const handleImageClick = () => {
-    setCurrentImageIndex((currentImageIndex + 1) % images.length);
-  };
+useEffect(() => {
+  const activeIntervalId = setInterval(() => {
+    setActiveSlide((activeSlide + 1) % images.length);
+  }, 3000);
+  return () => clearInterval(activeIntervalId);
+}, [activeSlide]);
 
-  const currentSlide = (n) => {
-    setCurrentImageIndex(n - 1);
-  };
+const currentSlide = (index) => {
+  setCurrentImageIndex(index - 1);
+  setActiveSlide(index - 1);
+};
 
-  return (
-    <div className="carousel">
-      <div className="carousel__image-container">
-        <img
-          className="carousel__image"
-          src={images[currentImageIndex].src}
-          alt="carousel"
-          onClick={handleImageClick}
-        />
-
-        <div className='select'>
-          <span id='0' className="dot" onClick={() => currentSlide(1)}></span>
-          <span id='1' className="dot" onClick={() => currentSlide(2)}></span>
-          <span id='2' className="dot" onClick={() => currentSlide(3)}></span>
-          <span id='3' className="dot" onClick={() => currentSlide(4)}></span>
-          <span id='4' className="dot" onClick={() => currentSlide(5)}></span>
-        </div>
+return (
+  <div className="carousel">
+    <div className="carousel__image-container">
+      <img
+        className="carousel__image"
+        src={images[currentImageIndex].src}
+        alt="carousel"
+        onClick={handleImageClick}
+      />
+      <div className='select'>
+        <span id='0' className="dot" onClick={() => currentSlide(1)}></span>
+        <span id='1' className="dot" onClick={() => currentSlide(2)}></span>
+        <span id='2' className="dot" onClick={() => currentSlide(3)}></span>
+        <span id='3' className="dot" onClick={() => currentSlide(4)}></span>
+        <span id='4' className="dot" onClick={() => currentSlide(5)}></span>
       </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default Carousel;
