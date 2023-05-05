@@ -61,10 +61,8 @@ span {
 .select {
   position: absolute;
   z-index: 2;
-  border: 2px blue solid;
   margin: 222px 0px 0px 147px;
   padding: 0 0 9px;
-  /* margin: -23px 0px; */
 }
 
 .txt {
